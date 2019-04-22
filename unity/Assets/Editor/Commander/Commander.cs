@@ -48,7 +48,7 @@ namespace Pasta.Finder
                 consumer.Consume(commands);
             }
 
-            return null;
+            return Terminated.Instance;
         }
     }
 }

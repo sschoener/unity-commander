@@ -2,6 +2,9 @@ using System.Diagnostics;
 
 namespace Pasta.Finder
 {
+    /// <summary>
+    /// Keeps track of a time-budget in milli-seconds.
+    /// </summary>
     public class TimeBudget : ITimeBudget
     {
         private readonly int _millis;

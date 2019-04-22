@@ -11,6 +11,11 @@ namespace Pasta.Utilities
         }
     }
     
+    /// <summary>
+    /// Wraps around a lifetime manager and keeps released items to be instantiated
+    /// again later.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ListPool<T> : ILifetimeManager<T>
     {
         private readonly Stack<T> _elements;

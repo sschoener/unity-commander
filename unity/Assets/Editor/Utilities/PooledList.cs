@@ -4,12 +4,17 @@ using Pasta.Utilities;
 
 namespace Pasta.Utilities
 {
-    public class PooledList<T> : IEnumerable<T>
+    /// <summary>
+    /// Represents a list with a number of always-allocated elements that
+    /// are returned to an underlying lifetime manager when the list shrinks.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class ObjectList<T> : IEnumerable<T>
     {
         private readonly ILifetimeManager<T> _pool;
         private readonly List<T> _entries;
 
-        public PooledList(ILifetimeManager<T> pool)
+        public ObjectList(ILifetimeManager<T> pool)
         {
             _pool = pool;
             _entries = new List<T>();

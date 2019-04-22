@@ -4,7 +4,7 @@ namespace Pasta.Finder
 {
     /// <summary>
     /// A consumer that simply enqueues all items it receives into a queue.
-    /// It is written with the assumption that some one thread takes this as an `IConsumer` where as another
+    /// It is written with the assumption that one thread takes this as an `IConsumer` where as another
     /// thread is only reading the items in question.
     /// </summary>
     /// <typeparam name="T"></typeparam>

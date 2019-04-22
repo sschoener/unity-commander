@@ -7,7 +7,7 @@ namespace Pasta.Finder
 {
     public class TextHighlighter
     {
-        private readonly PooledList<Label> _labels;
+        private readonly ObjectList<Label> _labels;
         private readonly string _highlightClass;
         private readonly VisualContainer _container;
         public VisualContainer Container { get { return _container; } }
@@ -16,7 +16,7 @@ namespace Pasta.Finder
         {
             _container = new VisualContainer();
             _container.style.flexDirection = FlexDirection.Row;
-            _labels = new PooledList<Label>(
+            _labels = new ObjectList<Label>(
                 labels ?? ListPool.New(() => new Label())
             );
             _highlightClass = highlightClass;

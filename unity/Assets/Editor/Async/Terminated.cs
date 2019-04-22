@@ -1,5 +1,8 @@
 namespace Pasta.Finder
 {
+    /// <summary>
+    /// A termination handle that is always terminated.
+    /// </summary>
     public class Terminated : ITerminationHandle
     {
 

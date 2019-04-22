@@ -1,5 +1,8 @@
 namespace Pasta.Finder
 {
+    /// <summary>
+    /// Represents an ongoing process that can be terminated, like a search.
+    /// </summary>
     public interface ITerminationHandle
     {
         /// <summary>

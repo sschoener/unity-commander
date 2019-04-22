@@ -4,6 +4,9 @@ using UnityEngine.Experimental.UIElements;
 
 namespace Pasta.Finder
 {
+    /// <summary>
+    /// A generic result item with a name, a path, and an image.
+    /// </summary>
     public class GenericResultItem : IHaveVisualElements
     {
         private readonly VisualElement _image;

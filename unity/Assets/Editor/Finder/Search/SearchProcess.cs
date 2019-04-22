@@ -21,6 +21,8 @@ namespace Pasta.Finder
 
         private void Update()
         {
+            // only continue the search when the current position in the search window is close to the end
+            // of the search.
             if (_position.Index + 5 * _position.WindowSize < _position.Count)
                 return;
             _budget.Reset();
