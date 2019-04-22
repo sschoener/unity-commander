@@ -1,0 +1,66 @@
+
+#Root {
+    min-height: 30;
+    min-width: 900;
+    background-color: #1D1D1D;
+}
+
+#SearchField {
+    margin-top: 4;
+    margin-bottom: 4;
+    height: 24;
+    font-size: 14;
+    font-style: bold;
+    background-color: #303030;
+    color: rgb(180, 180, 180);
+    background-image: none;
+}
+
+#ResultInfo {
+    color: rgb(160, 160, 160);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-alignment: middle-right;
+    font-size: 10;
+}
+
+#ResultList {
+    border-left: 2;
+    border-right: 2;
+    margin-left: 2;
+    margin-right: 2;
+    margin-bottom: 0;
+}
+
+.item-preview {
+    height: 16;
+    width: 16;
+    margin-right: 4;
+}
+
+.highlight-container {
+    margin-left: 4;
+    margin-right: 4;
+}
+
+.item-name {
+    color: rgb(160, 160, 160);
+    font-size: 12;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.item-name.highlight {
+    color: rgb(240, 240, 100);
+    font-style: bold;
+}
+
+.result.selected .item-name {
+    color: rgb(240, 240, 240);
+    font-size: 12;
+    font-style: bold;
+}

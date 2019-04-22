@@ -1,0 +1,69 @@
+
+.result {
+    border-left: 4;
+    flex-direction: row;
+    align-items: center;
+    height: 22;
+}
+
+.result.even {
+    background-color: #252525;
+}
+
+.result.odd {
+    background-color: #202020;
+}
+
+.result.selected {
+    background-color: #505020;
+}
+
+.generic-preview {
+    height: 16;
+    width: 16;
+    margin-right: 4;    
+}
+
+.highlight-container {
+    margin-left: 4;
+    margin-right: 4;
+}
+
+.generic-name {
+    color: rgb(160, 160, 160);
+    font-size: 12;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.generic-name.highlight {
+    color: rgb(240, 240, 100);
+    font-style: bold;
+}
+
+.generic-path {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    color: rgb(120, 120, 120);
+    font-size: 9;
+}
+
+.generic-path.highlight {
+    color: rgb(240, 240, 120);
+    font-size: 9;
+    font-style: bold;
+}
+
+.result.selected .generic-name {
+    color: rgb(240, 240, 240);
+    font-size: 12;
+    font-style: bold;
+}
+
+.result.selected > .generic-path {
+    color: rgb(180, 180, 180);
+}
